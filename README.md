@@ -1,4 +1,4 @@
-## 🤖 VRSEC-RAG Chatbot Dashboard
+## 🤖 RAG Chatbot
 
 ## 🔍 Overview
 **VRSEC-RAG Chatbot** is a powerful, intelligent web-based application designed to bring advanced Retrieval-Augmented Generation (RAG) capabilities to Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC). Built with a high-performance **Flask & LangChain backend** and an ultra-fast **React + Vite frontend**, this intelligent system parses institutional data, timetables, and documents to answer complex queries with high precision.
@@ -6,19 +6,18 @@
 Perfect for students, faculty, and administrators looking to instantly query academic documents, interact with AI, and experience seamless multi-lingual support.
 
 ## 📸 Screenshots
-![VRSEC-RAG Dashboard Preview 1](screenshot1.png) *(Main Chatbot Interface)*
-![VRSEC-RAG Dashboard Preview 2](screenshot2.png) *(Document Ingestion/Processing)*
-![VRSEC-RAG Dashboard Preview 3](screenshot3.png) *(Multilingual Bhashini Support)*
+![VRSEC-RAG Dashboard Preview 1](bot.png) *(Main Chatbot Interface)*
+![VRSEC-RAG Dashboard Preview 2](bot1.png) *(Document Ingestion/Processing)*
 
 ## ✨ Features
-  - ✅ **Retrieval-Augmented Generation (RAG)** – Context-aware AI that answers questions based on real institutional data
-  - ✅ **ChromaDB Vector Storage** – Fast, semantic similarity search over thousands of document embeddings
-  - ✅ **LangChain & HuggingFace Integration** – Leveraging state-of-the-art open-source LLMs and SentenceTransformers
-  - ✅ **Dedicated Timetable & Data Parsing** – Custom RAG routers handling complex tabular institutional data
-  - ✅ **Bhashini Multi-lingual Support** – Advanced translation capabilities to make the chatbot accessible in multiple Indian languages
-  - ✅ **Interactive React Frontend** – Lightning-fast UI built with Vite and styled beautifully with Tailwind CSS
-  - ✅ **Fully Responsive Design** – Clean, modern layout that works seamlessly on desktop, tablet, and mobile
-  - ✅ **Secure & Lightweight Flask API** – Ensures quick response times and decoupled microservice architecture
+  -  **Retrieval-Augmented Generation (RAG)** – Context-aware AI that answers questions based on real institutional data
+  -  **ChromaDB Vector Storage** – Fast, semantic similarity search over thousands of document embeddings
+  -  **LangChain & HuggingFace Integration** – Leveraging state-of-the-art open-source LLMs and SentenceTransformers
+  -  **Dedicated Timetable & Data Parsing** – Custom RAG routers handling complex tabular institutional data
+  -  **Bhashini Multi-lingual Support** – Advanced translation capabilities to make the chatbot accessible in multiple Indian languages
+  -  **Interactive React Frontend** – Lightning-fast UI built with Vite and styled beautifully with Tailwind CSS
+  -  **Fully Responsive Design** – Clean, modern layout that works seamlessly on desktop, tablet, and mobile
+  -  **Secure & Lightweight Flask API** – Ensures quick response times and decoupled microservice architecture
 
 ## 🧠 How It Works
   - The app uses **React + Vite** for a highly responsive, single-page application (SPA) chat interface.
