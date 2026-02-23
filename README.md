@@ -1,7 +1,7 @@
 ## 🤖 RAG Chatbot
 
 ## 🔍 Overview
-**VRSEC-RAG Chatbot** is a powerful, intelligent web-based application designed to bring advanced Retrieval-Augmented Generation (RAG) capabilities to Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC). Built with a high-performance **Flask & LangChain backend** and an ultra-fast **React + Vite frontend**, this intelligent system parses institutional data, timetables, and documents to answer complex queries with high precision.
+**RAG Chatbot** is a powerful, intelligent web-based application designed to bring advanced Retrieval-Augmented Generation (RAG) capabilities to Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC). Built with a high-performance **Flask & LangChain backend** and an ultra-fast **React + Vite frontend**, this intelligent system parses institutional data, timetables, and documents to answer complex queries with high precision.
 
 Perfect for students, faculty, and administrators looking to instantly query academic documents, interact with AI, and experience seamless multi-lingual support.
 
