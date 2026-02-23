@@ -6,7 +6,7 @@
 Perfect for students, faculty, and administrators looking to instantly query academic documents, interact with AI, and experience seamless multi-lingual support.
 
 ## 📸 Screenshots
-![VRSEC-RAG Dashboard Preview 1](bot.png) 
+![VRSEC-RAG Dashboard Preview 1](bot.png) (**Main Chat Bot Interface**)
 ![VRSEC-RAG Dashboard Preview 2](bot1.png)
 
 ## ✨ Features
