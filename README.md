@@ -1,90 +1,102 @@
-# 🌍 Earthquake & Seismic Events Dashboard
+## 🤖 VRSEC-RAG Chatbot Dashboard
 
 ## 🔍 Overview
-**Earthquake & Seismic Events Dashboard** is a beautiful, interactive web dashboard that visualizes and analyzes global earthquake and nuclear explosion data from **1965 to 2016**. Built with **Python (Flask)**, **Matplotlib**, **Seaborn**, and **Folium**, this project transforms raw seismic data into insightful, publication-quality visualizations — including frequency trends, energy release patterns, depth-magnitude relationships, aftershock sequences, and a global map of nuclear tests.
-Perfect for seismologists, researchers, students, or anyone curious about Earth's seismic history.
+**VRSEC-RAG Chatbot** is a powerful, intelligent web-based application designed to bring advanced Retrieval-Augmented Generation (RAG) capabilities to Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC). Built with a high-performance **Flask & LangChain backend** and an ultra-fast **React + Vite frontend**, this intelligent system parses institutional data, timetables, and documents to answer complex queries with high precision.
 
-## 📸 Screenshots
-![Earthquake Dashboard Preview 1](Earthquake1.png)
-![Earthquake Dashboard Preview 2](Earthquake2.png)
+Perfect for students, faculty, and administrators looking to instantly query academic documents, interact with AI, and experience seamless multi-lingual support.
+
+## 📸 Screenshot
+![VRSEC-RAG Dashboard Preview](screenshot.png) *(Add a screenshot here later)*
 
 ## ✨ Features
-  - ✅ **Decadal Earthquake Frequency Trend** – See how reported earthquakes increased over time
-  - ✅ **Cumulative Seismic Energy Release** – Visualize the exponential impact of major events
-  - ✅ **Magnitude vs. Depth Analysis** – Box plots and bubble charts revealing seismicity patterns
-  - ✅ **Gutenberg-Richter Law Verification** – Log-linear frequency-magnitude relationship
-  - ✅ **2011 Japan (Tōhoku) Aftershock Sequence** – 30-day case study of one of history’s largest quakes
-  - ✅ **Nuclear Explosion Global Map** – Interactive Folium map showing all recorded nuclear tests (1965–2016)
-  - ✅ **Reporting Agency Comparison** – Violin plots comparing magnitude distributions by source
-  - ✅ **Fully Responsive Design** – Clean Tailwind CSS layout that works on desktop and mobile
-  - ✅ **Zero JavaScript Required** – Pure server-side rendering with Flask
-    
+  - ✅ **Retrieval-Augmented Generation (RAG)** – Context-aware AI that answers questions based on real institutional data
+  - ✅ **ChromaDB Vector Storage** – Fast, semantic similarity search over thousands of document embeddings
+  - ✅ **LangChain & HuggingFace Integration** – Leveraging state-of-the-art open-source LLMs and SentenceTransformers
+  - ✅ **Dedicated Timetable & Data Parsing** – Custom RAG routers handling complex tabular institutional data
+  - ✅ **Bhashini Multi-lingual Support** – Advanced translation capabilities to make the chatbot accessible in multiple Indian languages
+  - ✅ **Interactive React Frontend** – Lightning-fast UI built with Vite and styled beautifully with Tailwind CSS
+  - ✅ **Fully Responsive Design** – Clean, modern layout that works seamlessly on desktop, tablet, and mobile
+  - ✅ **Secure & Lightweight Flask API** – Ensures quick response times and decoupled microservice architecture
+
 ## 🧠 How It Works
-  - The app uses **Flask** as a lightweight web server to serve a dynamic HTML dashboard
-  - All plots are generated on-the-fly using **Matplotlib** and **Seaborn**, then embedded as base64-encoded PNGs
-  - An interactive **Folium** map displays nuclear explosion locations with popups
-  - Data is loaded from a single `earthquakes.csv` file (from the USGS/significant earthquakes dataset)
-  - Each visualization is accompanied by clear titles, labels, and scientific context
-    
+  - The app uses **React + Vite** for a highly responsive, single-page application (SPA) chat interface.
+  - User queries are sent to a **Flask** backend that acts as the orchestration layer using **LangChain**.
+  - Institutional documents and timetables are processed, chunked, and embedded into a **ChromaDB** vector database natively.
+  - When a query is made, the system performs a semantic search to retrieve the most relevant context.
+  - This context is fed to a large language model to generate an accurate, localized, and context-rich response.
+
 ## 🛠️ Built With
-  - **Python 3** – Core backend logic
-  - **Flask** – Web framework and templating
-  - **Pandas** – Data manipulation and analysis
-  - **Matplotlib & Seaborn** – Publication-quality static visualizations
-  - **Folium** – Interactive leaflet maps for nuclear explosion events
-  - **Tailwind CSS (via CDN)** – Modern, responsive styling
-  - **Jinja2** – Dynamic HTML templating
-    
+  - **Python 3.11** – Core backend logic and data processing
+  - **Flask** – Web framework and REST API routing
+  - **LangChain & HuggingFace** – LLM orchestration and embeddings
+  - **ChromaDB** – High-performance vector database natively embedded
+  - **React & Vite** – Lightning-fast frontend UI components
+  - **Tailwind CSS** – Modern, responsive styling utility
+  - **Node.js & npm** – Frontend environment management
+
 ## 🧰 Getting Started
-To run the Earthquake Dashboard locally:
+To run the VRSEC-RAG Chatbot locally:
 
 ### Prerequisites
-- Python 3.8+
-- `earthquakes.csv` file in the project root (download from:
-  → https://earthquake.usgs.gov/earthquakes/search/ or use the standard significant earthquakes dataset)
+- **Python 3.9+** (preferably 3.11+)
+- **Node.js** (v18+ recommended)
+- **Git**
 
 ### Installation & Run
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Poorna-Sai-Sriharsha/RAG-CHATBOT.git
    ```
+
 2. **Navigate to the Project Directory:**
    ```bash
    cd RAG-CHATBOT
    ```
-3. **Install Dependencies:**
+
+3. **Set up and Run the Backend:**
+   Open a new terminal and run:
    ```bash
-   pip install flask pandas matplotlib seaborn folium
+   cd backend
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   pip install -r requirements.txt
+   python run.py
    ```
-4. **Place the Dataset:**
-   Download the earthquake dataset and name it `earthquakes.csv`
-   Place it in the same folder as `app.py`
-5. **Run the App:**
+   *The Flask API will start running on `http://127.0.0.1:5000`.*
+
+4. **Set up and Run the Frontend:**
+   Open a second terminal and run:
    ```bash
-   python app.py
+   cd frontend-vrsec
+   npm install
+   npm run dev
    ```
-6. **Open Your Browser:**
-   Go to → http://127.0.0.1:5000
-   You now have a fully functional seismic analysis dashboard running locally!
+   *The React development server will automatically start, typically accessible at `http://localhost:5173` or `http://localhost:5174`.*
+
+5. **Open Your Browser:**
+   Go to the local URL provided by Vite (e.g., `http://localhost:5173`). 
+   You now have a fully functional VRSEC-RAG Chatbot running locally!
 
 ## 📊 Dataset Source
-  - The dashboard uses the USGS Significant Earthquakes Archive (1965–2016)
-  - Link: https://earthquake.usgs.gov/earthquakes/search/
-    (Includes columns: Date, Time, Latitude, Longitude, Depth, Magnitude, Type, Source, etc.)
+  - The chatbot processes documents and structured data specific to **Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC)**.
+  - Course timetables, academic syllabi, and administrative PDFs are securely vectorized down to the fragment.
 
 ## 🧪 Testing
-  - Tested on Python 3.9–3.12
-  - Works on Windows, macOS, and Linux
-  - Verified rendering in Chrome, Firefox, Edge, and Safari
-  - Responsive design confirmed on mobile and tablet screens
+  - Backend API tested on Python 3.9–3.11 environments.
+  - Frontend components successfully verified in Chrome, Firefox, Edge, and Safari.
+  - Responsive design confirmed on mobile and tablet screens.
+  - Tested on Windows, macOS, and Linux.
 
 ## 📖 What I Learned
-  - Generating and embedding dynamic Matplotlib plots into web pages using base64
-  - Creating interactive geographic visualizations with Folium and Flask
-  - Cleaning and transforming large real-world seismic datasets with Pandas
-  - Applying classic seismology concepts: Gutenberg-Richter law, aftershock decay, energy scaling
-  - Building a clean, professional data dashboard using Flask + Tailwind CSS without JavaScript frameworks
-  - Balancing scientific accuracy with visually appealing design
+  - Architecting a full-stack Retrieval-Augmented Generation application from scratch.
+  - Managing huge machine-learning dependencies and vector databases like ChromaDB cleanly.
+  - Integrating advanced translation APIs (Bhashini) to dramatically enhance accessibility for regional users.
+  - Seamlessly coupling a modern React/Vite UI to a multi-threaded Python/Flask API.
+  - Understanding embeddings, semantic search clustering operations, and LLM context window limits.
 
 ## 🤝 Contributing
-Contributions are welcome! If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. For major changes—such as swapping the LLM backend or changing the database schema—please open an issue first to discuss what you would like to change.
