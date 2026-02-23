@@ -5,8 +5,10 @@
 
 Perfect for students, faculty, and administrators looking to instantly query academic documents, interact with AI, and experience seamless multi-lingual support.
 
-## 📸 Screenshot
-![VRSEC-RAG Dashboard Preview](screenshot.png) *(Add a screenshot here later)*
+## 📸 Screenshots
+![VRSEC-RAG Dashboard Preview 1](screenshot1.png) *(Main Chatbot Interface)*
+![VRSEC-RAG Dashboard Preview 2](screenshot2.png) *(Document Ingestion/Processing)*
+![VRSEC-RAG Dashboard Preview 3](screenshot3.png) *(Multilingual Bhashini Support)*
 
 ## ✨ Features
   - ✅ **Retrieval-Augmented Generation (RAG)** – Context-aware AI that answers questions based on real institutional data
